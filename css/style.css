@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding-top: 2em;
+    background: blue;
+    overflow-y: hidden;
+}
+
+.game-content{
+    visibility: hidden;
+    position: relative;
+    width: 80%;
+    height: 80vh;
+    border: 8px solid rgb(0, 0, 0);
+    margin: 0 auto;
+    overflow: hidden;
+    background: linear-gradient(#87ceeb, #e0f6ff);
+
+    /*background-image: url('/img/bg-rock.svg');*/
+}
+
+.welcome{
+    background: linear-gradient(#1706FA, #87ceeb);
+    visibility: visible;
+    position: relative;
+    width: 80%;
+    height: 80vh;
+    border: 8px solid rgb(0, 0, 0);
+    overflow: hidden;
+    margin: 0 auto;
+
+}
+
+.welcome-text{
+    position: absolute;
+    font-size: 45px;
+    color: red;
+    font-weight: bold;
+
+    top: 20%;
+    left: 50%;
+
+    transform:translate(-50%,-50%);
+
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+}
+
+.welcome-image{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+
+    transform:translate(-50%,-50%);
+}
+
+
+.pipe{
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    right: 500px;
+    animation: none;
+    margin-bottom: 0;
+}
+
+.redball{
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.jump{
+    animation: jump 500ms ease-out;
+}
+
+.clouds{
+    padding-top: 100px;
+    position: absolute;
+    width: 550px;
+    animation: none;
+}
+
+#score{
+    padding-top: 5%;
+    position: absolute;
+    padding-right: 30px;
+    font-size: 64px;
+    font-family: Helvetica;
+    color: #FFFFFF;
+    font-weight: 600;
+
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+
+    top: 5%;
+    left: 50%;
+
+    transform:translate(-50%,-50%);
+
+}
+
+.buttons{
+    display: flex;
+    position: absolute;
+    gap: 20px;
+    text-align: center;
+
+
+    top: 90%;
+    left: 50%;
+
+    transform:translate(-50%,-50%);
+}
+
+.button{
+    padding: 5px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: red;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+
+.button:active{
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+}
+
+.gameover{
+    visibility: hidden;
+    position: absolute;
+    font-size: 64px;
+    font-family: 'Helvetica';
+    color: red;
+    font-weight: 900;
+
+    top: 35%;
+    left: 50%;
+
+    transform:translate(-50%,-50%);
+
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+
+}
+.pontos{
+    visibility: hidden;
+    position: absolute;
+    font-size: 64px;
+    font-family: 'Helvetica';
+    color: red;
+    font-weight: 900;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+}
+
+@keyframes pipe-animation{
+    from{
+        right: -80px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes jump{
+    0%{
+        bottom: 0;
+    }
+
+    40%{
+        bottom: 180px;
+    }
+
+    50%{
+        bottom: 180px;
+    }
+
+    60%{
+        bottom: 180px;
+    }
+
+    100%{
+        bottom: 0;
+    }
+}
+
+@keyframes clouds-animation{
+    from{
+        right: -550px;
+    }
+    to{
+        right: 100%;
+    }
+}
