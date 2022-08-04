@@ -6,7 +6,7 @@ Feito para rodar apenas em computadores (Pretendo implementar uma versão para c
 
 Usei como base de aprendizado um vídeo do canal Manual do Dev e adicionei algumas novas funcionalidades
 
-Link do site -> red-ball-jump.vercel.app
+Link do site -> https://red-ball-jump.vercel.app
 
 O site usado para criar o personagem foi Piskel
 
