@@ -1,4 +1,4 @@
-# red-ball-jump
+# Red Ball Jump
 
 Jogo simples para treinar um pouco de javascript
 
